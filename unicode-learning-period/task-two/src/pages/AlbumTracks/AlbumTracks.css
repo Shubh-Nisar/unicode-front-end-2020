@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --primaryColor:#1DB954;
+    --backgroundColor: #333;
+    --accentColor: #fff;
+}
+
+*{
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+    margin-top: 120px;
+}
+
+.AlbumTracks-block{
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+
+.AlbumTracks-block h2{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: #fff !important;
+}
+
+.AlbumTracks-block__elem--tracksContainer{
+    display: block;
+    width: 100%;
+}
+
+.AlbumTracks-block__elem--trackInsideContainer{
+    border-left: #1DB954 2px solid;
+}
+
+.AlbumTracks-block__elem--trackInsideContainerA{
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AlbumTracks-block__elem--trackInsideContainer p{
+    color: #fff !important;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.AlbumTracks-block__elem--trackInsideContainer h4{
+    color: #fff !important;
+    font-size: 30px;
+    margin: 5px;
+    letter-spacing: 2px;
+}
+
+.AlbumTracks-block__elem--previewContainer iframe{
+    height: 120px !important;
+    border: none;
+}
+
+@media(max-width: 600px){
+    body{
+        margin-top: 150px;
+    }
+}
