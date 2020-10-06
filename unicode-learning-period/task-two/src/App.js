@@ -11,6 +11,7 @@ import Login from './pages/Login/Login';
 import Search from './pages/Search/Search';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//document.title = "Spotify";
 
 function App() {
 

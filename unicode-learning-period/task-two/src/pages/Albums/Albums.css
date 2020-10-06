@@ -27,6 +27,7 @@ body{
 
 .Album-block__elem--albumContainer{
     border-bottom: #1DB954 2px solid;
+    padding-top: 8px;
     padding-bottom: 8px;
     margin: 0 20px;
 }

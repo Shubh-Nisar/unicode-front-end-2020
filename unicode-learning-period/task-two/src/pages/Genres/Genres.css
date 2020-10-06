@@ -26,6 +26,10 @@ body{
     margin-top: 25px;
 }
 
+.Genres-block__elem--itemContainer>a>:hover{
+    opacity: 0.5 !important;
+}
+
 .Genres-block__elem--itemContainer h3{
     color: var(--primaryColor);
     margin-top: -50px;
