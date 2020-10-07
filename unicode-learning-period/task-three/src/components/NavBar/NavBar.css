@@ -54,6 +54,14 @@ li{
     padding-right: 10px;
 }
 
+.NavBar-block__elem--buttonContainer button{
+    border: 2px var(--primaryColor) solid;
+}
+
+.NavBar-block__elem--buttonContainer button:hover{
+    border: 2px #fff solid;
+}
+
 .MuiButton-label{
     margin-bottom: -5px !important;
 }
