@@ -1,0 +1,62 @@
+@import '../../components/NavBar/NavBar.css';
+
+:root{
+    --primaryColor: #0BB5FF;
+    --backgroundColor: #ccc;
+    --accentColor: #333;
+}
+
+.Country-block__elem--countryContainer{
+    text-align: left;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.Country-block__elem--countryName{
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.Country-block__elem--countryCapital{
+    font-size: 1.5vw;
+    margin: 5px 0 5px 8px;
+}
+
+.Country-block__elem--countryPopulation{
+    font-size: 8vw;
+    margin: 20px 0;
+    color: #72706E;
+}
+
+.CountryDoughnut-block{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.CountryDoughnut-block p{
+    font-size: 2.8vw;
+    letter-spacing: 0.4vw;
+    text-transform: uppercase;
+}
+
+.CountryDoughnut-block div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap !important;
+    margin-bottom: 28px;
+}
+
+.CountryDoughnut-block div div{
+    width: 50%;
+}
+
+.CountryDoughnut-block p div p{
+    font-size: 2vw;
+    letter-spacing: 0.1vw !important;
+    text-transform: uppercase;
+}
