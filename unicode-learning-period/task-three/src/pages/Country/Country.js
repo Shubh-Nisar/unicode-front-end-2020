@@ -49,7 +49,7 @@ const Country = props => {
                     data={data}
                     />
                 </div>
-                <p style={{fontSize: '1.5vw', textAlign: 'left'}}>
+                <p style={{fontSize: 18, textAlign: 'left'}}>
                     {countryData.data.name} [{countryData.data.nativeName}] lying in {countryData.data.region}<br />comprises 
                     <span style={{fontWeight: 'bolder'}}>  {(countryData.data.population*100/totalPopulation).toFixed(2)}%</span><br />of World Population.
                 </p>
@@ -91,7 +91,7 @@ const Country = props => {
                 <p className="Country-block__elem--countryPopulation">{countryData.data.population.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1,")}</p>
                 <p>{countryData.data.borders.map(elem => <Chip 
                 key={elem} label={elem} 
-                style={{margin: 5, fontSize: 20, backgroundColor: '#9F9F9D'}}
+                style={{margin: 5, fontSize: window.innerWidth > 768 ? 20 : 14, backgroundColor: '#9F9F9D'}}
                 component={Link}
                 to={`/${elem}`}
                 ></Chip>)}</p>

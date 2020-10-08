@@ -12,3 +12,9 @@
     margin: auto;
     margin-top: 130px;
 }
+
+@media(max-width: 600px){
+    .Home-block{
+        margin-top: 160px;
+    }
+}

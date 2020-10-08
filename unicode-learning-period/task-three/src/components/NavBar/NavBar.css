@@ -75,6 +75,18 @@ li{
     box-shadow: none !important;
 }
 
+.MuiTableRow-head{
+    background-color: #333;
+}
+
+.MuiTableCell-head{
+    color: white !important;
+}
+
+.MuiTableRow-root:hover{
+    background-color: #eee !important;
+}
+
 .NavBar-block__elem--googleButton div{
     margin-right: 0 !important;
 }

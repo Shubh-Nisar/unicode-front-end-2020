@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../ModalButton/ModalButton.css';
 
 import { Modal, Fade, Backdrop } from '@material-ui/core';
-import { Polar } from 'react-chartjs-2';
+import { Polar, Bar } from 'react-chartjs-2';
 const axios = require('axios');
 
 const ModalButton = props => {
@@ -40,14 +40,14 @@ const ModalButton = props => {
             datasets: [{
                 data: populationArray,
                 backgroundColor: colorArray,
-                label: 'World Stats',
+                label: 'Current Stats',
             }],
             labels: countryNameArray,
         };
         return (
-            <Polar 
-                data={data}
-            />
+            <>
+            {window.innerWidth > 900 ? <Polar data={data}/> : <Bar data={data}/>}
+            </>
         );
     }
 

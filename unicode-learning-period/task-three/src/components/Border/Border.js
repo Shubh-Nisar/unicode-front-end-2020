@@ -48,7 +48,7 @@ const Border = props => {
         return (
             <>
             <hr />
-            <p style={{letterSpacing: '0.1vw', fontSize: '3vw'}}>BORDER ANALYSIS</p>
+            <p style={{letterSpacing: '0.1vw', fontSize: window.innerWidth > 600 ? '3vw' : '8vw'}}>BORDER ANALYSIS</p>
             <Bar 
             data={data}
             />
@@ -58,7 +58,7 @@ const Border = props => {
 
     useEffect(() => {
         borderAnalysis();
-    }, []);
+    }, [props.borderCountryUrl]);
     return (
         <div>
             <div style={{width: '90%', textAlign: 'center', margin: 'auto'}}>
