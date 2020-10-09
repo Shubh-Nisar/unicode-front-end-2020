@@ -13,7 +13,7 @@
 > Block Contents of the Page unless the user is logged in.
 
 ### Google Authentication
-![populus_googleLogin](https://user-images.githubusercontent.com/65038837/95622410-13950100-0a91-11eb-8478-08abb8603368.png)
+![populus_googleLogin_LI](https://user-images.githubusercontent.com/65038837/95622726-ad5cae00-0a91-11eb-8ca5-182fdd75fe6d.jpg)
 > Login from desired Google Account.
 
 ### Country Specific Analysis
