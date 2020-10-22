@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --primaryColor:#1DB954;
+    --backgroundColor: #333;
+    --accentColor: #fff;
+}
+
+*{
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.Search-block__elem--trackInsideContainerA{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    border-left: var(--primaryColor) 2px solid;
+}
+
+li:hover{
+    background-color: #333;
+}
+
+.Search-block__elem--trackInsideContainerA>div{
+    margin-left: 16px;
+}
+
+.Search-block__elem--trackInsideContainerA>div>h4{
+    color: 'white';
+    text-transform: 'uppercase';
+    letter-spacing: 6px; 
+    font-size: 40px;
+}
+
+.Search-block__elem--trackInsideContainerA>div>p{
+    font-size: 28px;
+    color: gray;
+}
+
+.Search-block__elem--trackInsideContainerA>div>span{
+    font-size: 18px;
+    color: gray;
+}
+
+@media(max-width: 900px){
+    .Search-block__elem--trackInsideContainerA>div>h4{
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+    .Search-block__elem--trackInsideContainerA>div>p{
+        font-size: 22px;
+    }
+    .Search-block__elem--trackInsideContainerA>div>span{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 600px){
+    .Search-block__elem--trackInsideContainerA>div>h4{
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+    .Search-block__elem--trackInsideContainerA>div>p{
+        font-size: 18px;
+    }
+    .Search-block__elem--trackInsideContainerA>div>span{
+        font-size: 12px;
+    }
+}

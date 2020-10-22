@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --primaryColor:#1DB954;
+    --backgroundColor: #333;
+    --accentColor: #fff;
+}
+
+*{
+    list-style: none;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.Album-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    margin-top: 25px;
+}
+
+.Album-block__elem--albumContainer{
+    border-bottom: #1DB954 2px solid;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 20px;
+}
+
+.Album-block__elem--albumImageContainer{
+    width: 200px;
+    height: 200px;
+}
+
+.Album-block__elem--albumDetailContainer p{
+    color: white !important;
+    padding: 0 5px;
+}
+
+.Album-block__elem--albumDetailContainer span{
+    color: gray;
+    padding: 0 5px;
+}

@@ -1,0 +1,101 @@
+:root{
+    --primaryColor: #e50914;
+    --backgroundColor: #fff;
+    --secondaryColor: #000;
+    --accentColor: #ccc;
+}
+
+.Input-block{
+    width: 95%;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--secondaryColor);
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: normal;
+    font-size: 45px;
+    margin: 0 !important;
+    padding-bottom: 7px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    opacity: 0.75;
+    text-align: center;
+}
+
+.Input-block p{
+    border-bottom: 1px var(--primaryColor) solid;
+    margin: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.Input-block__elem--form{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Input-block__elem--formElement{
+    margin: 10px auto;
+}
+
+.Input-block__elem--formBtnContainer{
+    margin: 35px;
+}
+
+.Input-block__elem--formBtn{
+    background-color: var(--primaryColor) !important;
+}
+
+.Input-block__elem--tips{
+    width: 95%;
+    margin: auto;
+    border: 1px var(--secondaryColor) solid;
+}
+
+.Input-block__elem--tips h3{
+    font-weight: normal;
+    letter-spacing: 4px;
+    border-bottom: 1px var(--secondaryColor) solid;
+    text-align: left;
+    margin: none 10px;
+    padding: 5px 10px 30px 10px;
+    font-size: 25px;
+}
+
+.Input-block__elem--tipsCall{
+    margin: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.Input-block__elem--tipsCallBtn{
+    color: var(--primaryColor) !important;
+    border-color: #e50914 !important;
+    margin: 10px;
+}
+
+@media(max-width:768px){
+    h1{
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 600px){
+    .Input-block__elem--tipsCall{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+}

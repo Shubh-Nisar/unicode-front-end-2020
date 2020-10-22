@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --primaryColor: #1DB954;
+    --backgroundColor: #ccc;
+    --accentColor: #333;
+}
+
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.NavBar-block__elem--active{
+    border-bottom: var(--primaryColor) 3px solid !important;
+    color: var(--primaryColor) !important;
+    width: 60% !important;
+}
+
+.NavBar-block{
+    font-family: 'Montserrat' , Arial, Helvetica, sans-serif !important;
+}
+
+.NavBar-block__elem--flexContainer{
+    text-align: center;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 10px;
+    padding: 15px 5px;
+    background-color: rgba(0, 0, 0, 0.90) !important;
+    border-bottom: var(--primaryColor) solid 5px;
+}
+
+.NavBar-block__elem--headerContainer{
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.NavBar-block__elem--header{
+    font-size: 24px !important;
+}
+
+.NavBar-block__elem--buttonContainer{
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.NavBar-block__elem--button{
+    margin: 0 15px !important;
+}
+
+@media(max-width: 600px){
+    .NavBar-block__elem--flexContainer{
+        display: block !important;
+    }
+    .NavBar-block__elem--headerContainer{
+        align-items: center !important;
+        text-align: center !important;
+        margin: auto !important;
+        padding-left: 0px !important;
+    }
+    .NavBar-block__elem--button{
+        margin: 0 7px !important;
+    }
+}

@@ -1,0 +1,36 @@
+.ModalButton-block{
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 16px !important;
+}
+
+.ModalButton-block h2{
+    letter-spacing: 6px;
+    margin: 10px 0;
+    padding-top: 20px !important;
+}
+
+.ModalButton-block p{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+@media(max-width: 900px){
+    .ModalButton-block{
+        width: 80%;
+    }
+    .ModalButton-block p{
+        width: 98%;
+    }
+}
+
+@media(max-width: 600px){
+    .ModalButton-block{
+        width: 90%;
+    }
+    .ModalButton-block p{
+        width: 98%;
+    }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --primaryColor: #1DB954;
+    --backgroundColor: #ccc;
+    --accentColor: #333;
+}
+
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: black !important;
+}
+
+.Login-block{
+    display: grid;
+    place-items: center;
+}
+
+.Login-block__elem--logoContainer{
+    width: 90% !important;
+    height: 70vh !important;
+}
+
+.Login-block__elem--logo{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.Login-block__elem--linkContainer{
+    margin: 20px auto !important;
+    background-color: var(--primaryColor) !important;
+    padding: 12px 12px;
+    border-radius: 50px;
+}
+
+.Login-block__elem--link{
+    font-size: 25px !important;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    padding: 10px !important;
+}
+
+@media(max-width: 768px){
+    .Login-block__elem--logoContainer{
+        width: 98% !important;
+        height: 55vh !important;
+        margin-top: 30px !important;
+    }
+}

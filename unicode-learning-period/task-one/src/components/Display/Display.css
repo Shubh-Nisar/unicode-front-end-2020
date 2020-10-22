@@ -1,0 +1,100 @@
+:root{
+    --primaryColor: #e50914;
+    --backgroundColor: #fff;
+    --secondaryColor: #000;
+    --accentColor: #ccc;
+}
+
+.Display-block{
+    width: 95%;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--secondaryColor);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: normal;
+    font-size: 45px;
+    margin: 0 !important;
+    padding-bottom: 7px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    opacity: 0.75;
+    text-align: center;
+}
+
+.Display-block__elem--personal{
+    min-height: 200px !important;
+}
+
+.Display-block__elem--personal h3{
+    width: 90%;
+    text-align: center;
+    margin: 10px auto;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-top: 10px !important;
+    padding-bottom: 8px;
+    border-bottom: var(--primaryColor) 1px solid;
+}
+
+.Display-block__elem--personalGrid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Display-block__elem--personalGridInfo{
+    text-align: left;
+    margin: 10px 0;
+}
+
+.Display-block__elem--personalGridInitial{
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 35px !important;
+    background-color: var(--primaryColor) !important;
+    opacity: 0.75;
+}
+
+.Input-block__elem--personalGridFacilities{
+    color: var(--primaryColor) !important;
+    border-color: #e50914 !important;
+    margin: 22px 15px !important;
+}
+
+.Display-block__elem--loans h3{
+    border-bottom: var(--primaryColor) 2px solid;
+    padding: 8px 0 !important;
+    margin: 8px auto !important;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.Display-block__elem--loansMarquee{
+    margin: 10px;
+}
+
+@media(max-width:768px){
+    .Display-block{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:450px){
+    h1{
+        font-size: 35px;
+    }
+    .Display-block__elem--personalGrid{
+        flex-direction: column;
+    }
+    .Display-block__elem--personalGridInfo{
+        text-align: center;
+    }
+}
