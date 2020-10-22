@@ -1,0 +1,20 @@
+@import '../../components/NavBar/NavBar.css';
+
+/*:root{
+    --primaryColor: #0BB5FF;
+    --backgroundColor: #ccc;
+    --accentColor: #333;
+}*/
+
+.Home-block{
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-top: 130px;
+}
+
+@media(max-width: 600px){
+    .Home-block{
+        margin-top: 160px;
+    }
+}

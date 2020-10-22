@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --primaryColor: #0BB5FF;
+    --backgroundColor: #ccc;
+    --accentColor: #333;
+}
+
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style-type: none !important;
+}
+
+.NavBar-block__elem--active{
+    border-bottom: var(--accentColor) 3px solid !important;
+    color: var(--accentColor) !important;
+    font-weight: bolder !important;
+}
+
+.NavBar-block{
+    font-family: 'Montserrat' , Arial, Helvetica, sans-serif !important;
+}
+
+.NavBar-block__elem--flexContainer{
+    text-align: center;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 10px;
+    padding: 15px 5px;
+    background-color: var(--primaryColor) !important;
+}
+
+.NavBar-block__elem--headerContainer{
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+.NavBar-block__elem--header{
+    font-size: 24px !important;
+}
+
+.NavBar-block__elem--buttonContainer{
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.NavBar-block__elem--buttonContainer button{
+    border: 2px var(--primaryColor) solid;
+}
+
+.NavBar-block__elem--buttonContainer button:hover{
+    border: 2px #fff solid;
+}
+
+.MuiButton-label{
+    margin-bottom: -5px !important;
+}
+
+.NavBar-block__elem--button{
+    margin: 0 15px !important;
+}
+
+.NavBar-block__elem--googleButton button, .NavBar-block__elem--googleLogOutButton{
+    background-color: var(--primaryColor) !important;
+    box-shadow: none !important;
+}
+
+.MuiTableRow-head{
+    background-color: #333;
+}
+
+.MuiTableCell-head{
+    color: white !important;
+}
+
+.MuiTableRow-root:hover{
+    background-color: #eee !important;
+}
+
+.NavBar-block__elem--googleButton div{
+    margin-right: 0 !important;
+}
+
+.NavBar-block__elem--googleButton span{
+    display: none;
+}
+
+.NavBar-block__elem--googleLogOutButton div{
+    margin-right: 0 !important;
+    display: none !important;
+}
+
+.NavBar-block__elem--googleLogOutButton span{
+    padding: 0!important;
+    height: 42px !important;
+    border-radius: 24px !important;
+}
+
+@media(max-width: 600px){
+    .NavBar-block__elem--flexContainer{
+        display: block !important;
+    }
+    .NavBar-block__elem--headerContainer{
+        align-items: center !important;
+        text-align: center !important;
+        margin: auto !important;
+        padding-left: 0px !important;
+    }
+    .NavBar-block__elem--button{
+        margin: 0 7px !important;
+    }
+}
