@@ -58,7 +58,7 @@ const Home = props => {
         <ThemeProvider theme={theme}>
         <div className={classes.root}>
         <div className='Home-block'>
-            <Typography align="right" variant="subtitle2">Dark mode: Off &nbsp;&nbsp;
+            {/*<Typography align="right" variant="subtitle2">Dark mode: Off &nbsp;&nbsp;
             <FormControlLabel
            control={
            <Switch
@@ -69,7 +69,7 @@ const Home = props => {
           />
         }
         label="On"
-      /></Typography>
+      /></Typography>*/}
             <TableContainer className={classes.root} component={Paper}>
             <Table aria-label="simple table" style={{minWidth: 650}}>
             <TableHead className={classes.root} style={{borderBottom: '2px #333 solid'}}>
@@ -84,11 +84,11 @@ const Home = props => {
             <TableBody>
             {data && (
                 data.map(elem => <TableRow className={classes.root} key={elem.population} component={Link} to={`/${elem.alpha3Code}`}>
-                    <TableCell align="right">{count++}.</TableCell>
-                    <TableCell component="th" scope="row">{elem.name}</TableCell>
-                    <TableCell align="right">{elem.population.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1,")}</TableCell>
-                    <TableCell align="right">{elem.capital}</TableCell>
-                    <TableCell align="right">{elem.currencies[0].symbol} {elem.currencies[0].name}</TableCell>
+                    <TableCell  align="right">{count++}.</TableCell>
+                    <TableCell  component="th" scope="row">{elem.name}</TableCell>
+                    <TableCell  align="right">{elem.population.toString().replace(/(\d)(?=(\d{3})+$)/g, "$1,")}</TableCell>
+                    <TableCell  align="right">{elem.capital}</TableCell>
+                    <TableCell  align="right">{elem.currencies[0].symbol} {elem.currencies[0].name}</TableCell>
                 </TableRow>)
                 )}
             </TableBody>

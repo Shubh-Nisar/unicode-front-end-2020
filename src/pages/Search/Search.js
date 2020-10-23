@@ -79,7 +79,7 @@ const Search = props => {
         <ThemeProvider theme={theme}>
          <div className={classes.root}> 
         <div className='Home-block'>
-            <Typography align="right" variant="subtitle2">Dark mode: Off &nbsp;&nbsp;
+            {/*<Typography align="right" variant="subtitle2">Dark mode: Off &nbsp;&nbsp;
             <FormControlLabel
            control={
            <Switch
@@ -90,7 +90,7 @@ const Search = props => {
           />
         }
         label="On"
-      /></Typography>
+      /></Typography>*/}
             {data && (
                 data.map(elem => <div>
                     {(elem.name.toLowerCase()==searchName.toLowerCase() || elem.capital.toLowerCase()==searchName.toLowerCase()) && (
