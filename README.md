@@ -1,30 +1,40 @@
-# Site Snapshot
+# Added Features Snapshot
 
-### Home Page
-![populus_home](https://user-images.githubusercontent.com/65038837/95622179-95d0f580-0a90-11eb-9f4d-eac2a42ac1a4.png)
-> Current World Population Data, Google Login and World Stats option.
+### Search Bar 
+![search_bar](img1.png)
+> Search bar added to homepage to make filtering from 200+ countries easier.
 
-### World Statistics
-![populus_worldStats](https://user-images.githubusercontent.com/65038837/95622258-bc8f2c00-0a90-11eb-89d9-0f5207668651.png)
-> Graphical Representation of Top 8 most populated countries.
+### Example search for query= 'Brazil'
+![brazil](img2.png)
+> Displays results according to search query.
 
-### Blocked Access
-![populus_loginToAccess](https://user-images.githubusercontent.com/65038837/95622322-d9c3fa80-0a90-11eb-9357-b26819c5036e.png)
-> Block Contents of the Page unless the user is logged in.
+### Example search for Capital of a Country
+![abuja](img3.png)
+> Here, query = 'Abuja' which displays entry of Nigeria.
 
-### Google Authentication
-![populus_googleLogin_LI (2)](https://user-images.githubusercontent.com/65038837/95622916-0debeb00-0a92-11eb-8a65-f47a1cf0f631.jpg)
-> Login from desired Google Account.
+### Case-insensitive search
+![case_insensitive](img4.png)
+> Displays results irrespective of entered case.
 
-### Country Specific Analysis
-![populus_country](https://user-images.githubusercontent.com/65038837/95622505-43440900-0a91-11eb-9196-90187afb6d62.png)
-> Click on Border Countries to load border country specific data.
-> Click on display picture to logout.
-> Pie-Chart to country ratio world population.
+### Invalid search query#1
+![invalidsearch1](img5.png)
+> Appropriate message displayed.
 
-### Border Analysis
-![populus_borderAnalysis](https://user-images.githubusercontent.com/65038837/95622548-5c4cba00-0a91-11eb-8a66-8d337b2ea057.png)
-> Border Population Bar Chart for comparitive analysis. 
+### Invalid search query#2
+![invalidsearch2](img6.png)
+> Appropriate message displayed.
+
+### Query with whitespaces
+![usa](img7.png)
+
+
+### Accessing detailed country stats using search query example
+![india](img8.png)
+
+
+### Working of rest of the website retained
+![indiapage](img9.png)
+> Accessing the country-specific stats page based on country of your choice has become faster and easier. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
